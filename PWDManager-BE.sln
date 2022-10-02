@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PWDManager-BE", "PWDManager-BE.csproj", "{5DE01869-B5A7-4C0F-A70D-0B6BC5C1AD92}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PWDManager.Shared", "PWDManager.Shared\PWDManager.Shared.shproj", "{EBDF6773-8079-4B97-80AE-E912464BDA9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DE01869-B5A7-4C0F-A70D-0B6BC5C1AD92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE01869-B5A7-4C0F-A70D-0B6BC5C1AD92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE01869-B5A7-4C0F-A70D-0B6BC5C1AD92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE01869-B5A7-4C0F-A70D-0B6BC5C1AD92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF4F083B-3FBE-4F8E-AD4B-94E4F3A8B026}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		PWDManager.Shared\PWDManager.Shared.projitems*{ebdf6773-8079-4b97-80ae-e912464bda9a}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal
