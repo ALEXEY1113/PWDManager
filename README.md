@@ -1,2 +1,2 @@
-# PWDManager
-A Password Manager for Test proposal.
+# PWDManager-BE
+A Backend Password Manager for Test proposal.
