@@ -20,7 +20,7 @@ namespace PWDManager_BE.Data
                     Id = 1,
                     Url = "www.nike.com",
                     Name = "Nike",
-                    UserName = "nikeUser",
+                    Username = "nikeUser",
                     Password = "P4s$w0rd1!"
                 },
                 new Credential
@@ -28,7 +28,7 @@ namespace PWDManager_BE.Data
                     Id = 2,
                     Url = "www.adidas.com",
                     Name = "Adi",
-                    UserName = "adidasUser",
+                    Username = "adidasUser",
                     Password = "P4s$w0rd2!"
                 },
                 new Credential
@@ -36,7 +36,7 @@ namespace PWDManager_BE.Data
                     Id = 3,
                     Url = "www.puma.com",
                     Name = "Puma",
-                    UserName = "pumaUser",
+                    Username = "pumaUser",
                     Password = "P4s$w0rd3!"
                 },
                 new Credential
@@ -44,7 +44,7 @@ namespace PWDManager_BE.Data
                     Id = 4,
                     Url = "www.reebok.com",
                     Name = "R-Bok",
-                    UserName = "reebokUser",
+                    Username = "reebokUser",
                     Password = "P4s$w0rd4!"
                 },
                 new Credential
@@ -52,7 +52,7 @@ namespace PWDManager_BE.Data
                     Id = 5,
                     Url = "www.joma.com",
                     Name = "Joma",
-                    UserName = "jomaUser",
+                    Username = "jomaUser",
                     Password = "P4s$w0rd5!"
                 },
                 new Credential
@@ -60,7 +60,7 @@ namespace PWDManager_BE.Data
                     Id = 6,
                     Url = "www.asics.com",
                     Name = "Siks",
-                    UserName = "asicsUser",
+                    Username = "asicsUser",
                     Password = "P4s$w0rd6!"
                 },
                 new Credential
@@ -68,7 +68,7 @@ namespace PWDManager_BE.Data
                     Id = 7,
                     Url = "www.underarmnor.com",
                     Name = "U-Armor",
-                    UserName = "underArmorUser",
+                    Username = "underArmorUser",
                     Password = "P4s$w0rd7!"
                 }
             );

@@ -75,7 +75,7 @@ namespace PWDManager_BE.Controllers
 
             dbCredential.Name = credential.Name;
             dbCredential.Url = credential.Url;
-            dbCredential.UserName = credential.UserName;
+            dbCredential.Username = credential.Username;
             dbCredential.Password = credential.Password;
 
             await _dbContext.SaveChangesAsync();
