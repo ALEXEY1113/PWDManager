@@ -1,5 +1,4 @@
-﻿using System.Net;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 using PWDManager_BE.Data;
@@ -15,7 +14,7 @@ namespace PWDManager_BE.Controllers
 
         public CredentialController(DataContext dbContext)
         {
-            _dbContext = dbContext;
+            this._dbContext = dbContext;
         }
 
         #region Private Methods
@@ -24,14 +23,14 @@ namespace PWDManager_BE.Controllers
         {
             CredentialDTO response = new CredentialDTO
             {
-                data = await _dbContext.Credentials.ToListAsync()
+                Data = await this._dbContext.Credentials.ToListAsync()
             };
             return response;
         }
 
         private async Task<Credential> GetDBCredential(int id)
         {
-            return await _dbContext.Credentials.FirstOrDefaultAsync(c => c.Id.Equals(id));
+            return await this._dbContext.Credentials.FirstOrDefaultAsync(c => c.Id.Equals(id));
         }
 
         #endregion
@@ -45,8 +44,8 @@ namespace PWDManager_BE.Controllers
         [HttpPost]
         public async Task<ActionResult<CredentialDTO>> Create(Credential credential)
         {
-            await _dbContext.AddAsync(credential);
-            await _dbContext.SaveChangesAsync();
+            await this._dbContext.AddAsync(credential);
+            await this._dbContext.SaveChangesAsync();
 
             return Ok(await GetCredentials());
         }
@@ -60,7 +59,7 @@ namespace PWDManager_BE.Controllers
 
             CredentialDTO response = new CredentialDTO
             {
-                data = dbCredential
+                Data = dbCredential
             };
 
             return Ok(response);
@@ -78,7 +77,7 @@ namespace PWDManager_BE.Controllers
             dbCredential.Username = credential.Username;
             dbCredential.Password = credential.Password;
 
-            await _dbContext.SaveChangesAsync();
+            await this._dbContext.SaveChangesAsync();
 
             return Ok(await GetCredentials());
         }
@@ -90,8 +89,8 @@ namespace PWDManager_BE.Controllers
             if (dbCredential == null)
                 return NotFound("Sorry, but there is no credential...");
 
-            _dbContext.Credentials.Remove(dbCredential);
-            await _dbContext.SaveChangesAsync();
+            this._dbContext.Credentials.Remove(dbCredential);
+            await this._dbContext.SaveChangesAsync();
 
             return Ok(await GetCredentials());
         }

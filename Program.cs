@@ -19,7 +19,7 @@ builder.Services.AddCors(policy => {
     policy.AddPolicy(
         name: myCors,
         builder => builder.WithOrigins("*").WithHeaders("*").WithMethods("*")
-        );
+    );
 });
 
 builder.Services.AddEndpointsApiExplorer();

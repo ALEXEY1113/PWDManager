@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace PWDManager.Shared.Entities
 {
     public class CredentialDTO
     {
-        public DateTime lastUpdated { get; set; }
+        public DateTime LastUpdated { get; set; }
 
-        public Object data { get; set; }
+        public Object? Data { get; set; }
 
         public CredentialDTO()
         {
-            lastUpdated = DateTime.Now;
+            this.LastUpdated = DateTime.Now;
         }
     }
 }
